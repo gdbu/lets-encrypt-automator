@@ -1,4 +1,4 @@
-module github.com/gdbu/lets-encrypt-server
+module github.com/gdbu/lets-encrypt-automator
 
 go 1.14
 

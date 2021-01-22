@@ -1,5 +1,5 @@
-# Let's Encrypt Server
-Let's Encrypt Server is a stand-alone server for auto renewing SSL certificates.
+# Let's Encrypt Automater
+Let's Encrypt Automater is a stand-alone server for auto renewing SSL certificates.
 
 ## Usage
 ```bash
