@@ -1,5 +1,5 @@
 domain="[Domain here]"
 email="[Email here]"
 port="80"
-tlsPort="443"
+tls-port="443"
 directory="tls"
