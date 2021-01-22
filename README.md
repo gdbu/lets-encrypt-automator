@@ -33,3 +33,8 @@ tls-port = "443" # Optional, default is "443"
 ● Let's Encrypt :: Certificates obtained
 ● Let's Encrypt :: Certificate renewal process complete
 ```
+
+## Features
+[X] Utilize Let's Encrypt to auto generate SSL certificates
+[X] Check once a day to certificate nearing expiration and update if necessary
+[_] Implement Docker image
