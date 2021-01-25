@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/gdbu/lets-encrypt-server/certprocure"
+	"github.com/gdbu/lets-encrypt-automator/certprocure"
 	"github.com/hatchify/closer"
 )
 
