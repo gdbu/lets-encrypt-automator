@@ -1,0 +1,11 @@
+[Unit]
+Description=Let's Encrypt Automator
+
+[Service]
+User=centos
+LimitNOFILE=65535
+WorkingDirectory=/home/centos/
+ExecStart=/home/centos/go/bin/lets-encrypt-automator
+
+[Install]
+WantedBy=multi-user.target
