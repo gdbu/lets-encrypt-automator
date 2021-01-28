@@ -57,11 +57,6 @@ func (o *Options) setDefaults() {
 		o.Directory = defaultDirectory
 	}
 
-	if len(o.Port) == 0 {
-		out.Notificationf("No port found, using default port of %s", defaultPort)
-		o.Port = defaultPort
-	}
-
 	if len(o.TLSPort) == 0 {
 		out.Notificationf("No TLS port found, using default TLS port of %s", defaultTLSPort)
 		o.TLSPort = defaultTLSPort

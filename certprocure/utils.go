@@ -21,9 +21,11 @@ func newClient(opts *Options, config *lego.Config) (client *lego.Client, err err
 		return
 	}
 
-	// Set HTTP provider
-	if err = client.Challenge.SetHTTP01Provider(http01.NewProviderServer("", opts.Port)); err != nil {
-		return
+	if opts.Port != "" {
+		// Set HTTP provider
+		if err = client.Challenge.SetHTTP01Provider(http01.NewProviderServer("", opts.Port)); err != nil {
+			return
+		}
 	}
 
 	// Set TLS provider
