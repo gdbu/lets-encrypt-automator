@@ -28,9 +28,11 @@ func newClient(opts *Options, config *lego.Config) (client *lego.Client, err err
 		}
 	}
 
-	// Set TLS provider
-	if err = client.Challenge.SetTLSALPN01Provider(tlsalpn01.NewProviderServer("", opts.TLSPort)); err != nil {
-		return
+	if opts.TLSPort != "" {
+		// Set TLS provider
+		if err = client.Challenge.SetTLSALPN01Provider(tlsalpn01.NewProviderServer("", opts.TLSPort)); err != nil {
+			return
+		}
 	}
 
 	return
